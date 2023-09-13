@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var myButton = document.getElementById('button');
 
   myButton.addEventListener('click', function() {
-    $("#level-title").text("Level " + level);
-    nextSequence();
+    checkAnswer(gamePattern.length - 1);
   });
 });
 
